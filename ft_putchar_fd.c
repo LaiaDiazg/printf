@@ -1,0 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ladiaz-g <ladiaz-g@student.42malaga.com>   #+#  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024-09-21 10:52:57 by ladiaz-g          #+#    #+#             */
+/*   Updated: 2024-09-21 10:52:57 by ladiaz-g         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//Send the character 'c' to the file descriptor specified.
+//%c Imprime un solo carácter
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
